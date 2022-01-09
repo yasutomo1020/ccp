@@ -1,0 +1,178 @@
+﻿<html>
+<head>
+    <meta charset="utf-8"></meta>
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    ></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    ></meta>
+
+    <meta
+        name="description"
+        content="めっちゃ面白いサービス"
+    ></meta>
+
+    <title>top</title>
+
+    <link
+        href="css/bootstrap.min.css"
+        rel="stylesheet"
+    ></link>
+
+    <link
+        href="css/mycss.css"
+        rel="stylesheet"
+    ></link>
+
+    <script>
+        const sitename = "クラブ＆サークルポータル";
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <!-- <script src="js/anime.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
+        <script src="js/bootstrap.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <nav
+            class="navbar navbar-dark"
+            style="background-color:#102048;"
+        >
+            <div class="navbutton">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navmenu1"
+                    aria-controls="navmenu1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="navmenu1"
+                >
+                    <div class="navbar-nav">
+                        <a
+                            class="nav-item nav-link"
+                            href="#"
+                        >使い方</a>
+
+                        <a
+                            class="nav-item nav-link"
+                            href="#"
+                        >運営</a>
+
+                        <a
+                            class="nav-item nav-link"
+                            href="#"
+                        >プライバシーポリシー</a>
+
+                        <a
+                            class="nav-item nav-link"
+                            href="../pma"
+                        >データベース</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toptitle">
+                <a
+                    class="navbar-brand"
+                    href="index.html"
+                >
+                    <script>document.write(sitename);</script>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="cont">
+        <br>
+
+        <h2>団体を</h2>
+
+        <br>
+
+        <button id="serch"
+                type="button"
+                onclick="jqfadein('.serchform')"
+                class="btn btn-success btn-lg">
+            探す
+        </button>
+
+        <button id="entry"
+                type="button"
+                onclick="jqfadein('.entryform')"
+                class="btn btn-danger btn-lg">
+            登録
+        </button>
+        <br>
+        <br>
+
+        <div class="serchform" style="display: none;">
+            <h3>組織名から探す</h3>
+            <form>
+                <input type="text"
+                       class="form-control"
+                       name="name"
+                       size="40"
+                       placeholder="例：〇〇中学校、株式会社〇〇">
+            </form>
+            <h3>団体名から探す</h3>
+            <form>
+                <input type="text"
+                       class="form-control"
+                       name="name"
+                       size="40"
+                       placeholder="例：〇〇サークル、〇〇部">
+                <br>
+                <button class="btn btn-primary" type="submit">探す</button>
+                <br><br>
+                <button type="button" class="btn btn-primary" onclick="location.href='./view'">view表示</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='./view.ejs'">ejs表示</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='./view.html'">一覧表示</button>
+            </form>
+        </div>
+        <div class="entryform" style="display: none;">
+            <h3>登録</h3>
+            <form>
+                <input type="text"
+                       class="form-control"
+                       name="name"
+                       size="40"
+                       placeholder="例：〇〇中学校、株式会社〇〇">
+            </form>
+            <h3>名前</h3>
+                <form>
+                    <input type="text"
+                           class="form-control"
+                           name="name"
+                           size="40"
+                           placeholder="例：〇〇サークル、〇〇部">
+                    <br>
+                        <button class="btn btn-primary" type="submit">登録</button>
+                </form>
+            </div>
+
+        <a href="test.html">テストページ</a>
+    </div>
+        <footer>
+            <div class="container">
+                <p>朝倉康朋</p>
+            </div>
+        </footer>
+</body>
+</html>
