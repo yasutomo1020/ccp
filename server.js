@@ -29,35 +29,7 @@ connection.query(sql, function (err, rows, fields) {
         console.log(rows[i]);
     }
 });
-/*
-// �T�[�o�@�\�̏�����
-var server = http.createServer();
-var fs = require('fs');
-// ���N�G�X�g�̏���
-server.on('request', (req, res) => {
-    if (req.url == '/') {
-        filepath = '/index.html';
-    } else {
-        filepath = req.url;
-    }
-    var fullpath = __dirname + '/html/' + filepath;
-    fs.readFile(fullpath, 'UTF-8',
-        (err, data) => {
-            if (err) {
-                res.writeHead(404, { 'Content-Type': 'text/html' });
-                res.write('<h1>404 not found</h1>');
-            } else {
-                res.writeHead(200, { 'Content-Type': 'text/html' });
-                res.write(data);
 
-            }
-            res.end();
-        }
-    );
-});
-// �w�肵��IP�A�h���X�A�|�[�g�ԍ��ŃT�[�o�𗧂Ă�
-server.listen(80);
-*/
 
 const app = express();
 app.set("view engine", "ejs");
